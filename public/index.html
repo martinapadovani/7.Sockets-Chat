@@ -10,15 +10,17 @@
 
   <section class="chat-container">
     <article class="chat-window">
-      <div id="escribiendo"></div>
-      <div id="output"></div>
+      <div id="escribiendo"></div> <!-- Muestra el "escribiendo.."-->
+      <div id="output"></div> <!-- Muestra los mensajes -->
     </article>
   </section>
 
+  <!--Escribir y enviar mensajes-->
   <input type="text" id="username" placeholder="Tu nombre">
   <input type="text" id="mensaje" placeholder="Mensaje">
   <button id="enviar">Enviar!</button>
 
+  <!-- Enlazo el archivo que me provee socket.io, para la conexion del front y el back-->  
   <script src="/socket.io/socket.io.js"></script>
   <script src="/chat.js"></script>
 </body>
