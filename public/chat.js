@@ -20,7 +20,7 @@ enviar.addEventListener("click", () => {
 socket.on("chat:mensaje", (mensaje) => {
   /*El socket espera/escucha el evento chat:mensaje que se envía desde el servidor.
    Cuando se reciba el evento junto al mensaje, lo agrego al html para mostrarlo*/
-  listaDeMensajes.innerHTML += `<p> ${mensaje.usuario}: ${mensaje.contenido}</p>`
+  listaDeMensajes.innerHTML += `<li> ${mensaje.usuario}: ${mensaje.contenido}</li>`
 })
 
 //Notificacion de "escribiendo.."

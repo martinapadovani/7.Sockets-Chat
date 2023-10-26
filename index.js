@@ -37,6 +37,7 @@
   io.on("connection", (socket) => {
     /*cuando se ejecute el evento, se inicia una funcion flecha,
     que recibe por parametro el socket que se conectó */
+    console.log(`Nuevo usuario conectado al socket: ${socket.id}`)
 
     //Definimos eventos propios:
     
